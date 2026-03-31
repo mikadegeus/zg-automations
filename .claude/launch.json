@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "zg-site",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "/Users/luc/code/zg-automations", "-l", "3456"],
+      "port": 3456
+    }
+  ]
+}
