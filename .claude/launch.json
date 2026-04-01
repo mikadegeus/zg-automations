@@ -2,9 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "zg-site",
+      "name": "nextjs",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "/Users/luc/code/zg-automations", "-l", "3456"],
+      "runtimeArgs": ["next", "dev", "-p", "3456"],
       "port": 3456
     }
   ]

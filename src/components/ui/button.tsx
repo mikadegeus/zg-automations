@@ -1,6 +1,7 @@
 "use client"
 
 import { Button as ButtonPrimitive } from "@base-ui/react/button"
+import React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
@@ -59,4 +60,24 @@ function Button({
   )
 }
 
-export { Button, buttonVariants }
+function LinkButton({
+  className,
+  variant = "default",
+  size = "default",
+  href,
+  children,
+  ...props
+}: React.AnchorHTMLAttributes<HTMLAnchorElement> &
+  VariantProps<typeof buttonVariants> & { href: string }) {
+  return (
+    <a
+      href={href}
+      className={cn(buttonVariants({ variant, size, className }))}
+      {...props}
+    >
+      {children}
+    </a>
+  )
+}
+
+export { Button, LinkButton, buttonVariants }
