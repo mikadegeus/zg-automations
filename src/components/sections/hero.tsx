@@ -155,10 +155,7 @@ export function Hero() {
         <FadeUp delay={0.48}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-0">
             {STATS.map((stat, i) => (
-              <div
-                key={stat.label}
-                className="flex items-center gap-8 sm:gap-0"
-              >
+              <>
                 {i > 0 && (
                   <Separator
                     orientation="vertical"
@@ -166,7 +163,7 @@ export function Hero() {
                   />
                 )}
                 {i > 0 && <Separator className="sm:hidden w-10 bg-border" />}
-                <div className="flex flex-col items-center">
+                <div key={stat.label} className="flex flex-col items-center">
                   <span className="gradient-text font-extrabold text-3xl font-mono whitespace-nowrap">
                     {stat.countTo && stat.suffix ? (
                       <AnimatedCounter
@@ -181,7 +178,7 @@ export function Hero() {
                     {stat.label}
                   </span>
                 </div>
-              </div>
+              </>
             ))}
           </div>
         </FadeUp>
