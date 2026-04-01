@@ -14,7 +14,7 @@ export const CONTACT = {
 
 export const STATS = [
   { value: "80%", label: "minder handmatig werk", countTo: 80, suffix: "%" },
-  { value: "<2 wkn", label: "implementatietijd", countTo: null, suffix: null },
+  { value: "<2\u00A0wkn", label: "implementatietijd", countTo: null, suffix: null },
 ] as const;
 
 export const SERVICES = [

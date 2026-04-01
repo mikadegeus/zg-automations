@@ -167,7 +167,7 @@ export function Hero() {
                 )}
                 {i > 0 && <Separator className="sm:hidden w-10 bg-border" />}
                 <div className="flex flex-col items-center">
-                  <span className="gradient-text font-extrabold text-3xl font-mono">
+                  <span className="gradient-text font-extrabold text-3xl font-mono whitespace-nowrap">
                     {stat.countTo && stat.suffix ? (
                       <AnimatedCounter
                         value={stat.countTo}
